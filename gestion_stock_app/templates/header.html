@@ -1,0 +1,30 @@
+{% block header %}
+<header>
+    <div class="logo">.Logo</div>
+    <nav>
+        <ul>
+         <li><a href="{% url 'gestion_stock_app:index' %}">Akey</a></li>
+         <li>Sevis</li>
+         <li>Kontak</li>
+         <li>Blog</li>
+        </ul> 
+    </nav>
+    <div class="auth">
+        {% if user.is_authenticated %}
+            <form method="post" action="{% url 'comptes:logout' %}">
+              {% csrf_token %}  
+              <button class="logout-btn">Logout</button>
+            </form>
+
+            <div class="profile">
+              JH  
+              <!-- <img src="" alt="profile"> -->
+            </div>
+        {% else %}
+            <a href="{% url 'comptes:login' %}">Login</a>
+            <a href="{% url 'comptes:register' %}">SignUp</a>
+        {% endif %}
+        
+    </div>
+</header>
+{% endblock %}

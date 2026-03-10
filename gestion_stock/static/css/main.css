@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 30px;
+    background-color: #10cb10;
+    margin-bottom: 2rem;
+}
+
+.message .text-message {
+    font-size: 22px;
+    color: white;
+}
+
+header {
+    height: 50px;
+    padding: 0px 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+header .auth {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header .auth form>button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 0;
+    outline: 0;
+    border-radius: 22px;
+}
+
+header .auth form .logout-btn {
+    border: 1px solid #ff0303 !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+header .auth form .logout-btn:hover {
+    background-color: #d64b4b !important;
+}
+
+header .auth a {
+    color: white;
+}
+
+header .auth .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #e7e7ee;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(5px, 15px, 5px, 0.25px);
+}
+
+.hero p {
+    font-family: 'Cambria';
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.hero .action-btn {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero .action-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.hero .action-btn .btn-list {
+    background-color: black !important;
+}
+
+.hero .action-btn .btn-list:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.hero .action-btn .btn-add:hover {
+    background-color: #126012 !important;
+}
+
+footer{
+  margin-top: 2rem;  
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer p{
+    font-family: 'Cambria';
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* Estil pou tablo nou yo */
+.add-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.table-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    background-color: #f5f5f5;
+    width: 900px;
+    margin: 10px;
+}
+
+table tr > th{
+    background-color: black;
+    color: white;
+    padding: 8px 0px;
+}
+
+table tr > td {
+    font-size: 17px;
+    padding: 5.8px;
+}
+
+table tr .actions{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 8px;
+}
+
+/* Estil pou detay card pwodwi nou yo */
+.container-card{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container-card .card{
+  background-color: #e7e7e7;
+  width: 400px;
+  box-shadow: rgba(215, 212, 212, 0.25);
+  border: 1.5px solid black;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.container-card .card .card-header{
+    text-align: center;
+}
+
+.container-card .card .card-body p > span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.container-card .card .card-footer{
+    background-color: black;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.container-card .card .card-footer > a{
+    color: inherit;
+    text-decoration: none;
+}

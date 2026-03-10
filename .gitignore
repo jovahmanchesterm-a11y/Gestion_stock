@@ -1,0 +1,6 @@
+comptes/__pycache__/*.pyc
+comptes/__init__.py
+gestion_stock/__pycache__/*.pyc
+gestion_stock/__init__.py
+gestion_stock_app/__pycache__/*.pyc
+gestion_stock_app/__init__.py

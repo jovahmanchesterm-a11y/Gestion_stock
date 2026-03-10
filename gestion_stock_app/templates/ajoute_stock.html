@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Ajoute yon nouvo stock</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Non:</label>
+        <input type="text" name="nom" required><br><br>
+
+        <label>Kantite:</label>
+        <input type="number" name="quantite" required><br><br>
+
+        <label>Pri inite:</label>
+        <input type="text" name="prix_unitaire" required><br><br>
+
+        <button type="submit">Ajoute</button>
+    </form>
+    
+    <a href="{% url 'gestion_stock_app:list_stock' %}">Retounen nan lis stock</a>
+{% endblock %}   
+

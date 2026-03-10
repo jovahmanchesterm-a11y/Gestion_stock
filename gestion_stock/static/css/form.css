@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf0f0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.register-form {
+    padding: 16px;
+    background-color: #ffffff;
+    max-width: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 5px, 0px, 0.25px)
+}
+.title-form {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+.group-input {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+.group-input>label {
+    font-weight: bold;
+}
+.group-input>input {
+    padding: 8px;
+    border: 1px solid gainsboro;
+    outline: none;
+    border-radius: 6px;
+    color: #141414;
+}
+.group-input>input:focus {
+    border: 1px solid #0e75ea;
+}
+.register-form button {
+    width: 100%;
+    margin-top: 12px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: #0e75ea;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+}
+.register-form button:hover {
+    background-color: #0757b3;
+}
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 400px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    background-color: #010101;
+}
+.message .text-message {
+    color: red;
+    font-size: 22px;
+}

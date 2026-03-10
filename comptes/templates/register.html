@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE type="html">
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Register</title>
+        <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    </head>
+    <body>
+
+        <div class="container">
+            {% for message in messages %}
+               <div class="message">
+                 <span class="text-message">{{ message }}</span>
+               </div> 
+            {% endfor %} 
+    
+            <form method="post" class="register-form">
+               {% csrf_token %} 
+               
+               <h1 class="title-form">Register</h1>
+                <div class="group-input">
+                 <label for="name">Username</label>
+                 <input type="text" name="username" id="username" placeholder="Enter your username">
+                </div>
+                <div class="group-input">
+                 <label for="name">Email</label>
+                 <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="group-input">
+                 <label for="name">Password</label>
+                 <input type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="group-input">
+                    <label for="name">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password"
+                     placeholder="Confirm your password"
+                    >
+                </div>
+    
+                <button>
+                    Register
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

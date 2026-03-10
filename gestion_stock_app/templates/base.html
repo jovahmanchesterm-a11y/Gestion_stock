@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Gestion Stock</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <!-- Rele pati header a-->
+    {% include 'header.html' %}
+
+    <!-- Afiche alet nan aplkasyon an -->
+    <div class="container">
+        {% for message in messages %}
+            <div class="message">
+              <span class="text-message">{{ message }}</span>
+            </div> 
+        {% endfor %} 
+    </div>
+    
+    <!-- Mete kontni hero a -->
+    {% block 'section-hero' %}
+        <!-- Tout konti hero a ap la -->
+    {% endblock %}
+
+    <!-- Mete tout konti anfan yo anba pati sa -->
+    {% block content %}
+       <!-- Tout kontni anfan yo ap la -->
+    {% endblock %}
+
+    <!-- Mete konti footer a -->
+    {% include 'footer.html' %}
+</body>
+</html>

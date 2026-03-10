@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-card">
+        <div class="card">
+            <div class="card-header">
+                <h1>Detay sou {{ stock.nom }}</h1>
+            </div>
+    
+            <div class="card-body">
+                <p><span>Kantite: </span> {{ stock.quantite }}</p>
+                <p><span>Pri inite: </span> {{ stock.prix_unitaire }}</p>
+                <p><span>Ajoute le: </span> {{ stock.date_ajout }}</p>
+                <p><span>Dènye mise à jour: </span> {{ stock.date_mise_a_jour }}</p>
+            </div>
+    
+            <div class="card-footer">
+                <a href="{% url 'gestion_stock_app:modifye_stock' stock.id %}">Modifye</a> |
+                <a href="{% url 'gestion_stock_app:efase_stock' stock.id %}">Efase</a> |
+                <a href="{% url 'gestion_stock_app:list_stock' %}">Retounen nan list</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

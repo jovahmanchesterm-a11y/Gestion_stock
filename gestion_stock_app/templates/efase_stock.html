@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Ou sèten ou vle efase {{ stock.nom }}?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Wi, efase</button>
+    </form>
+    <a href="{% url 'gestion_stock_app:list_stock' %}">Non, retounen nan lis</a>
+{% endblock %}

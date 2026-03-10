@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block 'section-hero' %}
+    <div class="hero">
+      {% if user.is_authenticated %}
+         <p>Bienvenue <span>{{ user.email }}</span>, dans l'application de gestion de stock</p>
+      {% else %}
+         <p>Silvouple al konekte pou ka ajoute yon pwodwi nan estok</p>
+      {% endif %} 
+        <div class="action-btn">
+            {% if user.is_authenticated %}
+             <a class="btn-add" href="{% url 'gestion_stock_app:ajoute_stock' %}">Ajoute yon stock</a>
+            {% endif %}
+            <a class="btn-list" href="{% url 'gestion_stock_app:list_stock' %}">Lis stock yo</a>
+        </div>
+    </div>
+{% endblock %}
